@@ -1,8 +1,11 @@
 <?php
+namespace App\controllers;
 
-include "application/models/model_model.php";
-include "application/models/model_mark.php";
-
+use App\core\Controller;
+use App\models\Model_Type;
+use App\models\Model_Mark;
+use App\models\Model_Model;
+use App\core\View;
 
 class Controller_Type extends Controller
 {

@@ -1,4 +1,7 @@
 <?php
+namespace App\models;
+
+use App\core\Model;
 
 class Model_Model extends Model
 {

@@ -1,4 +1,8 @@
 <?php
+namespace App\core;
+
+use PDO;
+use PDOException;
 
 require_once("config.php");
 

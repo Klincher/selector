@@ -1,4 +1,7 @@
 <?php
+namespace App\controllers;
+
+use App\core\Controller;
 
 class Controller_404 extends Controller
 {
