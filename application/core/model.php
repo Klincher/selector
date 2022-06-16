@@ -1,4 +1,5 @@
 <?php
+
 namespace App\core;
 
 use PDO;
@@ -16,7 +17,7 @@ class Model
 
     public function __construct()
     {
-        $dsn = "mysql:host=".$this->_host.";dbname=".$this->_dbname.";charset=utf8";
+        $dsn = "mysql:host=" . $this->_host . ";dbname=" . $this->_dbname . ";charset=utf8";
 
         try {
             $this->conn = new PDO($dsn, $this->_user, $this->_password);

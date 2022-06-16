@@ -1,4 +1,5 @@
 <?php
+
 namespace App\controllers;
 
 include "application/models/model_type.php";
@@ -7,6 +8,7 @@ use App\core\Controller;
 use App\models\Model_Type;
 use App\models\Model_Mark;
 use App\core\View;
+
 class Controller_Mark extends Controller
 {
     function __construct()

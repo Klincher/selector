@@ -1,4 +1,5 @@
 <?php
+
 namespace App\controllers;
 
 use App\core\Controller;
@@ -26,5 +27,4 @@ class Controller_Type extends Controller
 
         $this->view->generate('main_view.php', 'template_view.php', $data);
     }
-
 }
