@@ -10,7 +10,7 @@
         <div class="row mb-2">
             <div class="col-2">
                 <form method="post" action="/mark">
-                    <select name="type" class="form-select">
+                    <select onchange="this.form.submit()" name="type" class="form-select">
                         <?php foreach ($types as $type) { ?>
                             <option value="<?php echo $type['id']; ?>" <?php if (isset($typeId) && $typeId === $type['id']) { ?> selected <?php } ?>><?php echo $type['name']; ?></option>
                         <?php } ?>
@@ -24,7 +24,7 @@
         <div class="row mb-2">
             <div class="col-2">
                 <form method="post" action="/model">
-                    <select name="mark" class="form-select">
+                    <select onchange="this.form.submit()" name="mark" class="form-select">
                         <?php foreach ($marks as $mark) { ?>
                             <option value="<?php echo $mark['id']; ?>" <?php if (isset($markId) && $markId === $mark['id']) { ?> selected <?php } ?>><?php echo $mark['name']; ?></option>
                         <?php } ?>

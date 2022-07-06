@@ -12,7 +12,6 @@ class Controller_Model extends Controller
 {
     function __construct()
     {
-
         $this->model = new Model_Model();
         $this->typeModel = new Model_Type();
         $this->markModel = new Model_Mark();
@@ -23,7 +22,7 @@ class Controller_Model extends Controller
     {
         $typeId = $_POST['type'];
         $markId = $_POST['mark'];
-        $modelId = $_POST['model'];
+        // $modelId = $_POST['model'];
 
         $data = [];
         $data['typeId'] = $typeId;

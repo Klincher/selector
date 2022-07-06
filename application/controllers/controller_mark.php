@@ -21,6 +21,7 @@ class Controller_Mark extends Controller
     function action_index()
     {
         $typeId = $_POST['type'] ?? 1;
+
         $data = [];
         $data['typeId'] = $typeId;
         $data['marks'] = $this->model->getData($typeId);
